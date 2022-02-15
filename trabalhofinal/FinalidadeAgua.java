@@ -11,7 +11,9 @@ public class FinalidadeAgua {
     private String utilidade;
     private double gastoAgua;
 
-    public FinalidadeAgua(String utilidade, double gastoAgua) {
+   public FinalidadeAgua(String utilidade, double gastoAgua) {
+        this.utilidade = utilidade;
+        this.gastoAgua = gastoAgua;
     }
     
     
