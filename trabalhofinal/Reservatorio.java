@@ -4,30 +4,31 @@
  */
 package trabalhofinal;
 
-/**
- *
- * @author LRodrigues
- */
-public class ReservatorioAgua {
-     
+
+public class Reservatorio
+{
     private String tipo;
     private double capacidade;
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
+    
+    public Reservatorio(String tipo, double capacidade){
         this.tipo = tipo;
-    }
-
-    public double getCapacidade() {
-        return capacidade;
-    }
-
-    public void setCapacidade(double capacidade) {
-        this.capacidade = capacidade;
+             this.capacidade = capacidade;
     }
     
+    public boolean setCapacidade(double capacidade){
+        if(capacidade > 0){
+            this.capacidade = capacidade;
+            return true;
+        }else{
+            return false;
+        }   
+    }
     
+    public String getTipo(){
+        return this.tipo;
+    }
+    
+    public double getCapacidade(){
+        return this.capacidade;
+    }
 }
