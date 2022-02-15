@@ -13,7 +13,10 @@ public class Chuva{
         double nivelPluviometrico =  (this.duracaoMinutos / 60) * this.intensidade;
         return nivelPluviometrico;
     }
-    
+    public Chuva(int duracaoMinutos, double intensidade){
+        this.duracaoMinutos = duracaoMinutos;
+        this.intensidade = intensidade;
+    }
     public boolean setDuracaoMinutos(int duracaoMinutos){
         if(duracaoMinutos > 0 && duracaoMinutos < 1440){
             this.duracaoMinutos = duracaoMinutos;
