@@ -4,16 +4,17 @@
  */
 package trabalhofinal;
 
-/**
- *
- * @author LRodrigues
- */
 public class FinalidadeAgua {
   
         
   
     private String utilidade;
     private double gastoAgua;
+
+    public FinalidadeAgua(String utilidade, double gastoAgua) {
+    }
+    
+    
 
     public String getUtilidade() {
         return utilidade;
@@ -31,8 +32,30 @@ public class FinalidadeAgua {
         this.gastoAgua = gastoAgua;
     }
 
+    public boolean setGastoAguaLitros(double gastoAgua){
+        if (gastoAgua<=0) {
+            this.gastoAgua = gastoAgua;
+            return false;
+        }else{
+            
+            return true;
+        }
+        
+    }
+    public void getTotalIndividuos(int totalIndividuos){
+        
+    }
+    public boolean removerIndividuo (String nome){
+        //lembrar o que é esse método
+        
+        
+    }
+
+    @Override
+    public String toString() {
+        return "FinalidadeAgua{" + "utilidade=" + utilidade + ", gastoAgua=" + gastoAgua + '}';
+    }
     
     }
    
-
   
